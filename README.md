@@ -36,10 +36,6 @@ The application is currently being used for office operations.
 * Account Details
 * Report Generation
 
-## Screenshots
-
-(Add screenshots here)
-
 ## Author
 
 Naikaj Sevak
