@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9C69F70B-AC91-4038-B3CC-581B684A1F7E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShrinathjiHaveli</RootNamespace>
+    <AssemblyName>ShrinathjiHaveli</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MyControl">
+      <HintPath>..\..\MyGui\MyControl\bin\Debug\MyControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlterItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterItems.Designer.cs">
+      <DependentUpon>AlterItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateItems.Designer.cs">
+      <DependentUpon>CreateItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateLedger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateLedger.Designer.cs">
+      <DependentUpon>CreateLedger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateManorath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateManorath.Designer.cs">
+      <DependentUpon>CreateManorath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Handler.cs" />
+    <Compile Include="HomeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeScreen.Designer.cs">
+      <DependentUpon>HomeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alter.Designer.cs">
+      <DependentUpon>Alter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountsDetails.Designer.cs">
+      <DependentUpon>AccountsDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseManorath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseManorath.Designer.cs">
+      <DependentUpon>PurchaseManorath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reset.Designer.cs">
+      <DependentUpon>reset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rokad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rokad.Designer.cs">
+      <DependentUpon>Rokad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShrinathjiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShrinathjiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AlterItems.resx">
+      <DependentUpon>AlterItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateItems.resx">
+      <DependentUpon>CreateItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateLedger.resx">
+      <DependentUpon>CreateLedger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateManorath.resx">
+      <DependentUpon>CreateManorath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeScreen.resx">
+      <DependentUpon>HomeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alter.resx">
+      <DependentUpon>Alter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountsDetails.resx">
+      <DependentUpon>AccountsDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PurchaseManorath.resx">
+      <DependentUpon>PurchaseManorath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reset.resx">
+      <DependentUpon>reset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rokad.resx">
+      <DependentUpon>Rokad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ShrinathjiDataSet.xsc">
+      <DependentUpon>ShrinathjiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ShrinathjiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShrinathjiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShrinathjiDataSet.xss">
+      <DependentUpon>ShrinathjiDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
